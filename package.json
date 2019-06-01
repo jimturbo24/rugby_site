@@ -1,0 +1,16 @@
+{
+  "name": "rugby_website",
+  "version": "1.0.0",
+  "description": "Website for the SA Wheelchair Rugby team",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "James Trbovich",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.5",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  }
+}
