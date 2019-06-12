@@ -323,20 +323,30 @@ header {
   margin: 1em; }
 
 section {
-  padding: 20px; }
+  padding: 20px 20px 0; }
 
 h2, p::first-letter {
   text-transform: capitalize; }
 
+p {
+  line-height: 1.5em;
+  letter-spacing: 0.05em; }
+
+.section-title {
+  width: 220px;
+  margin: .5em auto 1em;
+  padding: 0.3em 0.7em;
+  border-bottom: 2px solid #21476B; }
+
 .button {
   display: inline-block;
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
-  color: #21476B;
-  border: 3px solid;
-  padding: .5em 1.75em; }
+  background-color: #21476B;
+  color: #fff;
+  padding: .8em 1.75em; }
 
 nav ul {
   margin: 0;
@@ -355,18 +365,44 @@ nav a {
   padding: .8em; }
 
 .hero {
-  background-image: url(../img/hero_6.jpg);
+  background-image: url(../img/hero.jpg);
   background-size: cover;
   background-position: center;
-  padding: 10em 2em;
-  height: 80vh; }
+  padding: 10em 2em 5em; }
 
 .title {
   font-size: 2rem;
-  margin-bottom: 1.5em; }
+  margin-bottom: 2em; }
 
 .title span {
   display: block;
   font-size: 1.5rem;
   font-weight: 300;
   margin-top: .8em; }
+
+.mission p:last-child {
+  margin-bottom: 0; }
+
+.player-img {
+  width: 250px;
+  margin-top: 1em; }
+
+figure:first-of-type img {
+  margin-top: 0; }
+
+.player-name {
+  margin-bottom: 0; }
+
+.player-blurb {
+  margin: .5em 0 0; }
+
+.donate-img {
+  width: 10em; }
+
+.sponsor-logos img {
+  width: 10em;
+  display: block;
+  margin: 15px auto; }
+
+footer {
+  margin: 3em 2em 1em; }
