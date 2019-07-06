@@ -323,7 +323,7 @@ header {
   margin: 2em; }
 
 section {
-  padding: 20px 20px 0; }
+  padding: 20px 30px 0; }
 
 h2, p::first-letter {
   text-transform: capitalize; }
@@ -351,7 +351,12 @@ p {
 @media (min-width: 60rem) {
   section {
     padding: 2em 2em 0;
-    font-size: 1.4em; }
+    font-size: 1.4em;
+    max-width: 55em;
+    margin: 0 auto; }
+  .hero {
+    max-width: none;
+    margin: 0; }
   .button {
     font-size: 1.4rem; } }
 
@@ -398,13 +403,15 @@ nav a {
   margin-bottom: 0; }
 
 @media (min-width: 60rem) {
-  .mission, .about {
-    max-width: 60em;
-    margin: 0 auto; } }
+  .mission p, .about p, .donate p {
+    text-align: justify; } }
 
 .player-img {
   width: 250px;
   margin-top: 1em; }
+
+figure {
+  margin: 0 10px; }
 
 figure:first-of-type img {
   margin-top: 0; }
@@ -419,7 +426,7 @@ figure:first-of-type img {
   .members-content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     font-size: 0.8em; }
   figure:first-of-type img {
     margin-top: 1em; }
@@ -446,6 +453,9 @@ iframe {
     margin: 1em 0 1em; } }
 
 .donate-img {
+  width: 23em; }
+
+.paypal-img {
   width: 10em; }
 
 .sponsor-logos {
