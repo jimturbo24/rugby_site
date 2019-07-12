@@ -458,6 +458,9 @@ iframe {
 .paypal-img {
   width: 10em; }
 
+.join iframe {
+  margin: 0 auto; }
+
 .sponsor-logos {
   display: flex;
   flex-wrap: wrap;
