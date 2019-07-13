@@ -459,6 +459,7 @@ iframe {
   width: 10em; }
 
 .join iframe {
+  max-width: 100%;
   margin: 0 auto; }
 
 .sponsor-logos {
