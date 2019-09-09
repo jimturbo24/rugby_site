@@ -45,16 +45,24 @@ p {
     border-bottom: 2px solid #21476B;
 }
 
-.button {
+.button-base {
     display: inline-block;
     font-size: 1.2rem;
-    font-weight: 700;
     text-decoration: none;
     text-transform: uppercase;
+}
+.button-solid {
+    font-weight: 700;
     background-color: #21476B;
     color: #fff;
-    // border: 3px solid;
-    padding: .8em 1.75em;
+    padding: .8em 1.75em; 
+}
+
+.button-narrow {
+    font-weight: 500;
+    color: #21476B;
+    border: 1px solid;
+    padding: .4em 1.75em;
 }
 
 @media (min-width: 60rem) {
@@ -108,7 +116,7 @@ nav a {
 
 .title {
     font-size: 2rem;
-    margin-bottom: 2em;
+    // margin-bottom: 2em;
 }
 
 .title span{
@@ -135,7 +143,7 @@ nav a {
 }
 
 @media (min-width: 60rem) {
-    .mission p, .about p, .donate p {
+    .mission p, .about p, .donate p, .the-game p {
         text-align: justify
     }
 }
@@ -161,6 +169,7 @@ figure:first-of-type img {
 
 .player-blurb {
     margin: .5em 0 0;
+    display: none;
 }
 
 @media (min-width: 60rem) {
@@ -177,6 +186,10 @@ figure:first-of-type img {
 
     .player {
         max-width: 25%;
+    }
+    
+    .player-blurb {
+        display: block;
     }
 }
 
@@ -212,11 +225,15 @@ iframe {
 // **** donate section ****
 
 .donate-img {
-    width: 23em;
+    width: 10em;
 }
 
-.paypal-img {
-    width: 10em;
+@media (min-width: 60rem) {
+    .donate-logos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
 }
 
 // **** join section ****
